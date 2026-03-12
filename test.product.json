@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "source": "example-shop.com",
+    "currency": "UZS",
+    "generated_at_utc": "2026-02-13T00:00:00Z",
+    "created_by_id": null,
+    "notes": "Template for web scraping import. Fill placeholders and duplicate product objects as needed."
+  },
+  "reference_data": {
+    "categories": [
+      {
+        "name": "Smartfonlar",
+        "slug": "smartfonlar",
+        "image_url": "https://cdn.example.com/categories/smartfonlar.jpg",
+        "created_by_id": null
+      }
+    ],
+    "brands": [
+      {
+        "name": "Samsung",
+        "slug": "samsung",
+        "image_url": "https://cdn.example.com/brands/samsung.png",
+        "created_by_id": null
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Color",
+        "slug": "color",
+        "created_by_id": null,
+        "values": [
+          {
+            "value": "Black",
+            "code": "#000000",
+            "created_by_id": null
+          },
+          {
+            "value": "White",
+            "code": "#FFFFFF",
+            "created_by_id": null
+          }
+        ]
+      },
+      {
+        "name": "Storage",
+        "slug": "storage",
+        "created_by_id": null,
+        "values": [
+          {
+            "value": "128GB",
+            "code": null,
+            "created_by_id": null
+          },
+          {
+            "value": "256GB",
+            "code": null,
+            "created_by_id": null
+          }
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "external_id": "shop-100001",
+      "name": "Samsung Galaxy S24",
+      "slug": "samsung-galaxy-s24",
+      "description": "Full product description from source site.",
+      "short_description": "Short summary.",
+      "is_active": true,
+      "average_rating": 4.8,
+      "reviews_count": 120,
+      "category_slug": "smartfonlar",
+      "brand_slug": "samsung",
+      "created_by_id": null,
+      "variants": [
+        {
+          "external_id": "var-100001-black-128",
+          "sku": "SGS24-BLK-128",
+          "name": "Black / 128GB",
+          "price": 12499000.0,
+          "old_price": 12999000.0,
+          "cost_price": 11000000.0,
+          "stock_quantity": 25,
+          "weight": 0.19,
+          "width": 7.1,
+          "height": 14.7,
+          "length": 0.8,
+          "is_active": true,
+          "created_by_id": null,
+          "attribute_values": [
+            {
+              "attribute_slug": "color",
+              "value": "Black"
+            },
+            {
+              "attribute_slug": "storage",
+              "value": "128GB"
+            }
+          ],
+          "media": [
+            {
+              "media_type": "IMAGE",
+              "file_url": "https://cdn.example.com/products/s24/black/front.jpg",
+              "is_thumbnail": true,
+              "sequence": 1,
+              "created_by_id": null
+            },
+            {
+              "media_type": "IMAGE",
+              "file_url": "https://cdn.example.com/products/s24/black/back.jpg",
+              "is_thumbnail": false,
+              "sequence": 2,
+              "created_by_id": null
+            },
+            {
+              "media_type": "VIDEO",
+              "file_url": "https://cdn.example.com/products/s24/overview.mp4",
+              "is_thumbnail": false,
+              "sequence": 3,
+              "created_by_id": null
+            }
+          ]
+        }
+      ],
+      "media": [
+        {
+          "media_type": "IMAGE",
+          "file_url": "https://cdn.example.com/products/s24/main.jpg",
+          "is_thumbnail": true,
+          "sequence": 1,
+          "created_by_id": null
+        }
+      ]
+    }
+  ]
+}

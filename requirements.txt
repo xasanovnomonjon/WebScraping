@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+lxml
+pydantic
+pydantic-settings
+python-dotenv
+tenacity
+fake-useragent
+typer
+rich
